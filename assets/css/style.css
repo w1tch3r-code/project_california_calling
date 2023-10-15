@@ -1,0 +1,473 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./../fonts/Inter-VariableFont_slnt_wght.ttf");
+}
+@font-face {
+  font-family: "WorkSans";
+  src: url("./../fonts/WorkSans-Regular.ttf");
+}
+.btn__main {
+  font-family: "WorkSans";
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -0.4px;
+  font-style: normal;
+  padding-inline: 32px;
+  padding-block: 14px;
+  color: white;
+  border: 1px solid rgb(170, 170, 170);
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.btn__main:hover {
+  background-color: rgb(170, 170, 170);
+  color: rgb(0, 0, 0);
+}
+
+body {
+  height: 100vh;
+  background-color: #F5F5F5;
+}
+body .wrapper {
+  max-width: 82.25rem;
+  margin: 0 auto;
+}
+
+header {
+  background-color: black;
+  padding-block: 0 5vh;
+  padding-inline: 8%;
+}
+header .deko__line {
+  width: 2px;
+  height: 15vh;
+  margin: 0 auto;
+  display: block;
+}
+header .article__claim {
+  width: clamp(300px, 50%, 500px);
+  margin: 0 auto;
+  text-align: center;
+  padding-block: 4vh 20vh;
+  color: white;
+}
+header .article__claim p {
+  font-family: "WorkSans";
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  font-style: normal;
+}
+header .article__claim h1 {
+  font-family: "Inter";
+  font-size: 7vmin;
+  font-weight: 700;
+  line-height: 80%;
+  letter-spacing: 0;
+  font-style: normal;
+  padding-block: 12px;
+}
+header .article__claim h1 span {
+  color: black;
+  text-shadow: 1px 1px 1px white, 1px -1px 1px white, -1px 1px 1px white, -1px -1px 1px white;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__story__wrap {
+  background-color: black;
+  padding-inline: 8% 0;
+  padding-block: 12vh 8vh;
+  color: white;
+}
+.section__story__wrap article div .p__big {
+  font-family: "Inter";
+  font-size: 9vmin;
+  font-weight: 700;
+  line-height: 112%;
+  letter-spacing: -2.475px;
+  font-style: normal;
+  padding-block-end: 3vh;
+}
+.section__story__wrap article .hero__info {
+  padding-inline-end: 10%;
+  margin-block-end: -25px;
+}
+.section__story__wrap article .main__infos {
+  padding-block-start: 12vh;
+  background: url("./../images/map.svg") center right/45vh no-repeat;
+}
+.section__story__wrap article .main__infos .p__small {
+  font-family: "WorkSans";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  font-style: normal;
+  padding-block-end: 0.625rem;
+}
+
+.section__action {
+  display: grid;
+  grid-template-columns: 1fr minmax(250px, 500px) 1fr;
+  position: relative;
+  padding-block-start: 38vh;
+  padding-block-end: 28.5vh;
+  color: rgb(0, 0, 0);
+}
+.section__action img {
+  position: absolute;
+}
+.section__action img:nth-of-type(1) {
+  top: -3%;
+  right: 10%;
+  width: 330px;
+}
+.section__action img:nth-of-type(2) {
+  top: 15%;
+  left: 5%;
+  width: 275px;
+}
+.section__action img:nth-of-type(3) {
+  top: 35%;
+  right: 0;
+  width: 275px;
+}
+.section__action img:nth-of-type(4) {
+  top: 47%;
+  left: 15%;
+  width: 330px;
+}
+.section__action img:nth-of-type(5) {
+  top: 56%;
+  right: 12%;
+  width: 330px;
+}
+.section__action img:nth-of-type(6) {
+  top: 73%;
+  left: 0;
+  width: 275px;
+}
+.section__action img:nth-of-type(7) {
+  top: 88%;
+  right: 20%;
+  width: 440px;
+}
+.section__action article {
+  grid-column: 2/3;
+  z-index: 1;
+}
+.section__action article h2 {
+  font-family: "Inter";
+  font-size: 7vmin;
+  font-weight: 700;
+  line-height: 98%;
+  letter-spacing: -1.2px;
+  font-style: normal;
+  padding-block: 5% 0;
+  padding-inline: 5%;
+  background-color: #F5F5F5;
+}
+.section__action article p {
+  font-family: "WorkSans";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 188%;
+  letter-spacing: -0.4px;
+  font-style: normal;
+  padding-block: 5%;
+  padding-inline: 5%;
+  background-color: #F5F5F5;
+}
+.section__action article:nth-of-type(1) {
+  padding-block-end: 64vh;
+}
+
+.section__goldenbear {
+  position: relative;
+  padding-inline: 8%;
+  padding-block: 15vh 0;
+  background-color: black;
+  overflow-x: hidden;
+  color: white;
+}
+.section__goldenbear article {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 2%;
+}
+.section__goldenbear article .goldenbear__title {
+  flex-basis: 292px;
+}
+.section__goldenbear article .goldenbear__title p {
+  font-family: "WorkSans";
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+  font-style: normal;
+  padding-block-end: 24px;
+}
+.section__goldenbear article .goldenbear__title h2 {
+  font-family: "Inter";
+  font-size: 7.5vmin;
+  font-weight: 700;
+  line-height: 98%;
+  letter-spacing: 0;
+  font-style: normal;
+  padding-block-end: 24px;
+}
+.section__goldenbear article .goldenbear__text {
+  flex-basis: 520px;
+}
+.section__goldenbear article .goldenbear__text p {
+  font-family: "Inter";
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 113%;
+  letter-spacing: -0.4px;
+  font-style: normal;
+  padding-block-end: 20px;
+}
+.section__goldenbear article .goldenbear__text address {
+  font-family: "WorkSans";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: -0.4px;
+  font-style: normal;
+  padding-block-end: 24px;
+}
+.section__goldenbear .article__goldenbear__img {
+  padding-block-start: 15vh;
+  margin-bottom: -15vh;
+}
+.section__goldenbear .article__goldenbear__img div {
+  display: flex;
+  align-items: center;
+}
+.section__goldenbear .article__goldenbear__img div img:nth-of-type(1) {
+  width: clamp(350px, 66%, 731px);
+  z-index: 5;
+}
+.section__goldenbear .article__goldenbear__img div img:nth-of-type(2) {
+  width: clamp(150px, 33%, 366px);
+  z-index: 10;
+  margin-left: -70px;
+  margin-block-start: 4vh;
+}
+.section__goldenbear .anim__california__circle {
+  position: relative;
+  background-color: white;
+  padding-block: 20vh;
+  margin-inline: -106px;
+  overflow: hidden;
+}
+.section__goldenbear .anim__california__circle img {
+  position: absolute;
+  top: -140px;
+  right: -10%;
+  width: 500px;
+  height: auto;
+  animation: circle 8s linear infinite;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.section__poppybear {
+  padding-inline: 8%;
+  padding-block: 20px 0;
+  background-color: #F5F5F5;
+  position: relative;
+  color: rgb(0, 0, 0);
+}
+.section__poppybear article {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2%;
+}
+.section__poppybear article .poppybear__title {
+  flex-basis: 292px;
+}
+.section__poppybear article .poppybear__title p {
+  font-family: "WorkSans";
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+  font-style: normal;
+  padding-block-end: 24px;
+}
+.section__poppybear article .poppybear__title h2 {
+  font-family: "Inter";
+  font-size: 7.5vmin;
+  font-weight: 700;
+  line-height: 98%;
+  letter-spacing: 0;
+  font-style: normal;
+  padding-block-end: 24px;
+}
+.section__poppybear article .poppybear__text {
+  flex-basis: 530px;
+}
+.section__poppybear article .poppybear__text p {
+  font-family: "Inter";
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 113%;
+  letter-spacing: -0.4px;
+  font-style: normal;
+  padding-block-end: 20px;
+}
+.section__poppybear article .poppybear__text address {
+  font-family: "WorkSans";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: -0.4px;
+  font-style: normal;
+  padding-block-end: 24px;
+}
+.section__poppybear .article__poppybear__img {
+  padding-block-start: 12vh;
+}
+.section__poppybear .article__poppybear__img div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.section__poppybear .article__poppybear__img div img:nth-of-type(1) {
+  width: clamp(150px, 33%, 366px);
+  margin-right: -60px;
+  margin-block-start: 80px;
+  z-index: 10;
+}
+.section__poppybear .article__poppybear__img div img:nth-of-type(2) {
+  width: clamp(350px, 66%, 731px);
+}
+
+footer {
+  position: relative;
+  margin-top: 32px;
+  padding-inline: 8%;
+  padding-block: 10vh 2vh;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+footer article {
+  width: clamp(350px, 50%, 500px);
+  padding-block-end: 10vh;
+}
+footer article p:nth-of-type(1) {
+  font-family: "WorkSans";
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  font-style: normal;
+}
+footer article p:nth-of-type(2) {
+  font-family: "Inter";
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 192%;
+  letter-spacing: 0;
+  font-style: normal;
+  padding-block: 3vh;
+}
+footer .infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .infos .social a img {
+  width: 15px;
+  aspect-ratio: 1/1;
+  margin-right: 5px;
+}
+footer .infos .social address, footer .infos .social p {
+  font-family: "WorkSans";
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+  font-style: normal;
+}
+footer .infos .social address {
+  padding-block: 1.5vh;
+}
+footer .infos .logos {
+  margin-inline-end: 40px;
+}
+footer .infos .logos a img {
+  width: 60px;
+  margin-inline: 5px;
+}
+footer .anim {
+  position: absolute;
+  transform: rotate(45deg);
+  width: max-content;
+  padding-block: 10px;
+  top: 0;
+  right: -435px;
+  background-color: #F5F5F5;
+}
+footer .anim p {
+  font-family: "Inter";
+  font-size: 7vmin;
+  font-weight: 700;
+  line-height: 80%;
+  letter-spacing: 0;
+  font-style: normal;
+  padding-block: 12px;
+  animation: banner 10s linear infinite alternate;
+  color: rgb(0, 0, 0);
+}
+footer .anim p span {
+  color: #F5F5F5;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0), 1px -1px 1px white, -1px 1px 1px white, -1px -1px 1px white;
+}
+
+@keyframes banner {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(700px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

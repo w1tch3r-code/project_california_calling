@@ -1,0 +1,522 @@
+// Befehl für watch:
+// sass --watch assets/scss/style.scss assets/css/style.css
+
+@charset "UTF-8";
+
+@use './variables.scss' as vars;
+@use './mixin.scss' as mix;
+
+
+// ========================================================== 
+//                           Resets
+// ========================================================== 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    // display: block;
+    max-width: 100%;
+}
+
+// ========================================================== 
+//                       Random Image Links
+// ==========================================================
+
+// https://source.unsplash.com/random?night sky
+// https://source.unsplash.com/random/?Cryptocurrency&1
+// https://picsum.photos/300/300?random=1
+
+// ========================================================== 
+//                            Fonts
+// ==========================================================
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./../fonts/Inter-VariableFont_slnt_wght.ttf');
+}
+
+@font-face {
+    font-family: 'WorkSans';
+    src: url('./../fonts/WorkSans-Regular.ttf');
+}
+
+// ========================================================== 
+//                    reusable CSS classes
+// ==========================================================
+
+.btn__main {
+        @include mix.fontStyle('WorkSans', 1.375rem, 400, 110%, -0.4px);
+        padding-inline: 32px;
+        padding-block: 14px;
+        color: vars.$txt-color-white;
+        border: 1px solid vars.$border-color;
+        transition: background-color 0.5s ease-in-out,
+        color 0.5s ease-in-out;
+
+        &:hover {
+            background-color: vars.$border-color;
+            color: vars.$txt-color-black;
+        }
+}
+
+
+// ========================================================== 
+//                        Body – Wrapper
+// ==========================================================
+
+body {
+    height: 100vh;
+    background-color: vars.$bg-color-lightgrey;
+    .wrapper {
+        max-width: 82.25rem;
+        margin: 0 auto;
+    }
+}
+
+// ========================================================== 
+//                            Header
+// ==========================================================
+
+header {
+    background-color: vars.$bg-color;
+    padding-block: 0 5vh;
+    padding-inline: 8%;
+
+    .deko__line {
+        width: 2px;
+        height: 15vh;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .article__claim {
+        width: clamp(300px, 50%, 500px);
+        margin: 0 auto;
+        text-align: center;
+        padding-block: 4vh 20vh;
+        color: vars.$txt-color-white;
+
+        p {
+            @include mix.fontStyle('WorkSans', 0.75rem, 400);
+        }
+
+        h1 {
+            @include mix.fontStyle('Inter', 7vmin, 700, 80%);
+            padding-block: 12px;
+
+            span {
+                color: black;
+                text-shadow:  1px  1px 1px white,
+                1px -1px 1px white,
+                -1px  1px 1px white,
+                -1px -1px 1px white;
+            }
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+// ========================================================== 
+//                      Section Story Wrap
+// ==========================================================
+
+.section__story__wrap {
+    background-color: vars.$bg-color;
+    padding-inline: 8% 0;
+    padding-block: 12vh 8vh;
+    color: vars.$txt-color-white;
+
+    article {
+
+        div {
+            .p__big {
+                @include mix.fontStyle('Inter', 9vmin, 700, 112%, -2.475px);
+                padding-block-end: 3vh;
+            }
+        }
+
+        .hero__info {
+            padding-inline-end: 10%;
+            margin-block-end: -25px;
+        }
+
+        .main__infos {
+            padding-block-start: 12vh;
+            background: url('./../images/map.svg') center right / 45vh no-repeat;
+        
+            .p__small {
+                @include mix.fontStyle('WorkSans', 0.875rem, 400);
+                padding-block-end: 0.625rem;
+            }
+        }
+    }
+}
+
+
+// ========================================================== 
+//                      Section Action
+// ==========================================================
+
+.section__action {
+    display: grid;
+    grid-template-columns: 1fr minmax(250px, 500px) 1fr;
+    position: relative;
+    padding-block-start: 38vh;
+    padding-block-end: 28.5vh;
+    color: vars.$txt-color-black;
+
+    img {
+        position: absolute;
+    }
+    
+    img:nth-of-type(1) {
+        top: -3%;
+        right: 10%;
+        width: 330px;
+    }
+
+    img:nth-of-type(2) {
+        top: 15%;
+        left: 5%;
+        width: 275px;
+    }
+
+    img:nth-of-type(3) {
+        top: 35%;
+        right: 0;
+        width: 275px;
+    }
+
+    img:nth-of-type(4) {
+        top: 47%;
+        left: 15%;
+        width: 330px;
+    }
+
+    img:nth-of-type(5) {
+        top: 56%;
+        right: 12%;
+        width: 330px;
+    }
+
+    img:nth-of-type(6) {
+        top: 73%;
+        left: 0;
+        width: 275px;
+    }
+
+    img:nth-of-type(7) {
+        top: 88%;
+        right: 20%;
+        width: 440px;
+    }
+
+    article {
+        grid-column: 2 / 3;
+        z-index: 1;
+        
+
+        h2 {
+            @include mix.fontStyle('Inter', 7vmin, 700, 98%, -1.2px);
+            padding-block: 5% 0;
+            padding-inline: 5%;
+            background-color: vars.$bg-color-lightgrey;
+        }
+
+        p {
+            @include mix.fontStyle('WorkSans', 1rem, 400, 188%, -0.4px);
+            padding-block: 5%;
+            padding-inline: 5%;
+            background-color: vars.$bg-color-lightgrey;
+        }
+    }
+
+    article:nth-of-type(1) {
+        padding-block-end: 64vh;
+    }
+}
+
+
+// ========================================================== 
+//                    Section Golden Bear
+// ==========================================================
+
+.section__goldenbear {
+    position: relative;
+    padding-inline: 8%;
+    padding-block: 15vh 0;
+    background-color: vars.$bg-color;
+    overflow-x: hidden;
+    color: vars.$txt-color-white;
+
+    article {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        gap: 2%;
+
+        .goldenbear__title {
+            flex-basis: 292px;
+            p {
+                @include mix.fontStyle('WorkSans', 1.25rem, 400, 150%, -0.4px);
+                padding-block-end: 24px
+            }
+
+            h2 {
+                @include mix.fontStyle('Inter', 7.5vmin, 700, 98%);
+                padding-block-end: 24px
+            }
+        }
+
+        .goldenbear__text {
+            flex-basis: 520px;
+            p {
+                @include mix.fontStyle('Inter', 1.75rem, 700, 113%, -0.4px);
+                padding-block-end: 20px
+            }
+
+            address {
+                @include mix.fontStyle('WorkSans', 1.125rem, 400, 160%, -0.4px);
+                padding-block-end: 24px
+            }
+        }
+    }
+
+
+    .article__goldenbear__img {
+        padding-block-start: 15vh;
+        margin-bottom: -15vh;
+
+        div {
+            display: flex;
+            align-items: center;
+
+            img:nth-of-type(1) {
+                width: clamp(350px, 66%, 731px);
+                z-index: 5;
+            }
+    
+            img:nth-of-type(2) {
+                width: clamp(150px, 33%, 366px);
+                z-index: 10;
+                margin-left: -70px;
+                margin-block-start: 4vh;
+            }
+        }
+    }
+
+    .anim__california__circle {
+        position: relative;
+        background-color: white;
+        padding-block: 20vh;
+        margin-inline: -106px;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: -140px;
+            right: -10%;
+            width: 500px;
+            height: auto;
+            animation: circle 8s linear infinite;
+        }
+    }
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+// ========================================================== 
+//                    Section Poppy Bear
+// ==========================================================
+
+.section__poppybear {
+    padding-inline: 8%;
+    padding-block: 20px 0;
+    background-color: vars.$bg-color-lightgrey;
+    position: relative;
+    color: vars.$txt-color-black;
+
+    article {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2%;
+
+        .poppybear__title {
+            flex-basis: 292px;
+            p {
+                @include mix.fontStyle('WorkSans', 1.25rem, 400, 150%, -0.4px);
+                padding-block-end: 24px
+            }
+
+            h2 {
+                @include mix.fontStyle('Inter', 7.5vmin, 700, 98%);
+                padding-block-end: 24px
+            }
+        }
+
+        .poppybear__text {
+            flex-basis: 530px;
+            p {
+                @include mix.fontStyle('Inter', 1.75rem, 700, 113%, -0.4px);
+                padding-block-end: 20px
+            }
+
+            address {
+                @include mix.fontStyle('WorkSans', 1.125rem, 400, 160%, -0.4px);
+                padding-block-end: 24px
+            }
+        }
+    }
+
+    .article__poppybear__img {
+        padding-block-start: 12vh;
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            img:nth-of-type(1) {
+                width: clamp(150px, 33%, 366px);
+                margin-right: -60px;
+                margin-block-start: 80px;
+                z-index: 10;
+            }
+
+            img:nth-of-type(2) {
+                width: clamp(350px, 66%, 731px);
+            }
+        }
+    }
+}
+
+
+// ========================================================== 
+//                          Footer
+// ==========================================================
+
+footer {
+    position: relative;
+    margin-top: 32px;
+    padding-inline: 8%;
+    padding-block: 10vh 2vh;
+    background-color: vars.$bg-color;
+    color: vars.$txt-color-white;
+    overflow: hidden;
+
+    article {
+        width: clamp(350px, 50%, 500px);
+        padding-block-end: 10vh;
+
+        p:nth-of-type(1) {
+            @include mix.fontStyle('WorkSans', 0.75rem, 400);
+        }
+
+        p:nth-of-type(2) {
+            @include mix.fontStyle('Inter', 1.5rem, 700, 192%);
+            padding-block: 3vh;
+        }
+    }
+
+    .infos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .social {
+            a {
+                img {
+                    width: 15px;
+                    aspect-ratio: 1 / 1;
+                    margin-right: 5px
+                }
+            }
+
+            address, p  {
+                @include mix.fontStyle('WorkSans', 0.75rem, 400);
+            }
+
+            address {
+                padding-block: 1.5vh;
+            }
+
+        }
+
+        .logos {
+            margin-inline-end: 40px;
+            a {
+                img {
+                    width: 60px;
+                    margin-inline: 5px;
+                }
+            }
+        }
+    }
+
+    .anim {
+        position: absolute;
+        transform: rotate(45deg);
+        width: max-content;
+        padding-block: 10px;
+        top: 0;
+        right: -435px;
+        background-color: vars.$bg-color-lightgrey;
+
+        p {
+            @include mix.fontStyle('Inter', 7vmin, 700, 80%);
+            padding-block: 12px;
+            animation: banner 10s linear infinite alternate;
+            color: vars.$txt-color-black;
+            
+
+            span {
+                color: vars.$bg-color-lightgrey;
+                text-shadow:  1px  1px 1px rgb(0, 0, 0),
+                1px -1px 1px white,
+                -1px  1px 1px white,
+                -1px -1px 1px white;
+            }
+        }
+    }
+
+}
+
+@keyframes banner {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(700px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

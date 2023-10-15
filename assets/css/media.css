@@ -1,0 +1,288 @@
+@media screen and (max-width: 30em) {
+  .btn__main {
+    font-size: 1rem;
+  }
+  header {
+    padding-block: 0 3vh;
+  }
+  header .deko__line {
+    width: 2px;
+    height: 10vh;
+  }
+  header .article__claim {
+    width: auto;
+    padding-block: 2vh 10vh;
+  }
+  header .article__claim h1 {
+    font-size: 10vmin;
+  }
+  .section__story__wrap {
+    padding-block: 8vh;
+  }
+  .section__story__wrap article .main__infos {
+    background: url("./../images/map.svg") bottom right/30vh no-repeat;
+  }
+  .section__action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    margin-block-start: -5vh;
+  }
+  .section__action img {
+    position: static;
+  }
+  .section__action img:nth-of-type(1),
+  .section__action img:nth-of-type(2),
+  .section__action img:nth-of-type(3),
+  .section__action img:nth-of-type(4),
+  .section__action img:nth-of-type(5),
+  .section__action img:nth-of-type(6),
+  .section__action img:nth-of-type(7) {
+    width: 85%;
+  }
+  .section__action article h2 {
+    font-size: 12vmin;
+    padding-inline: 8%;
+  }
+  .section__action article p {
+    padding-inline: 8%;
+  }
+  .section__action article:nth-of-type(1) {
+    padding-block-end: 0;
+  }
+  .section__goldenbear {
+    padding-block: 10vh 0;
+  }
+  .section__goldenbear article .goldenbear__title h2 {
+    font-size: 12vmin;
+  }
+  .section__goldenbear article .goldenbear__text p {
+    font-size: 7vmin;
+  }
+  .section__goldenbear .article__goldenbear__img {
+    padding-block-start: 4vh;
+  }
+  .section__goldenbear .article__goldenbear__img div img:nth-of-type(1) {
+    width: clamp(200px, 66%, 731px);
+  }
+  .section__goldenbear .article__goldenbear__img div img:nth-of-type(2) {
+    width: clamp(110px, 33%, 366px);
+    margin-left: -40px;
+    margin-block-start: 2vh;
+  }
+  .section__goldenbear .anim__california__circle {
+    padding-block: 18vh;
+  }
+  .section__goldenbear .anim__california__circle img {
+    top: -109px;
+    right: -25px;
+    width: 345px;
+  }
+  .section__poppybear article .poppybear__title h2 {
+    font-size: 12vmin;
+  }
+  .section__poppybear article .poppybear__text p {
+    font-size: 7vmin;
+  }
+  .section__poppybear .article__poppybear__img {
+    padding-block-start: 4vh;
+  }
+  .section__poppybear .article__poppybear__img div img:nth-of-type(1) {
+    width: clamp(110px, 33%, 366px);
+    margin-right: -40px;
+    margin-block-start: 20px;
+  }
+  .section__poppybear .article__poppybear__img div img:nth-of-type(2) {
+    width: clamp(200px, 66%, 731px);
+  }
+  footer article {
+    width: clamp(250px, 50%, 500px);
+  }
+  footer article p:nth-of-type(2) {
+    font-size: 1rem;
+    padding-block-end: 5vh;
+  }
+  footer .infos {
+    gap: 10px;
+  }
+  footer .infos .logos {
+    margin-inline-end: 0;
+    text-align: right;
+  }
+  footer .anim {
+    padding-block: 0;
+    top: -15px;
+    right: -140px;
+  }
+  footer .anim p {
+    font-size: 6vmin;
+  }
+  @keyframes banner {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(250px);
+    }
+    0% {
+      transform: translateX(0);
+    }
+  }
+}
+@media screen and (min-width: 30.0625em) and (max-width: 64em) {
+  .section__action {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 2vh;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    margin-block-start: -5vh;
+  }
+  .section__action img {
+    position: static;
+  }
+  .section__action img:nth-of-type(1),
+  .section__action img:nth-of-type(2),
+  .section__action img:nth-of-type(3),
+  .section__action img:nth-of-type(4),
+  .section__action img:nth-of-type(5),
+  .section__action img:nth-of-type(6) {
+    width: 75%;
+  }
+  .section__action img:nth-of-type(7) {
+    grid-column: 1/3;
+    width: 50%;
+  }
+  .section__action article {
+    grid-column: 1/3;
+    text-align: center;
+  }
+  .section__action article h2 {
+    padding-inline: 25%;
+  }
+  .section__action article p {
+    padding-inline: 25%;
+  }
+  .section__action article:nth-of-type(1) {
+    padding-block-end: 0;
+  }
+  footer {
+    padding-block: 10vh 5vh;
+  }
+  footer article {
+    width: clamp(350px, 50%, 500px);
+  }
+  footer article p:nth-of-type(2) {
+    font-size: 1rem;
+    padding-block-end: 10vh;
+  }
+  footer .infos .logos {
+    margin-inline-end: 0;
+  }
+  footer .anim {
+    right: -50%;
+  }
+  @keyframes banner {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(500px);
+    }
+    0% {
+      transform: translateX(0);
+    }
+  }
+}
+@media screen and (min-width: 30.0625em) and (max-width: 64em) and (orientation: landscape) {
+  .btn__main {
+    font-size: 1rem;
+  }
+  .section__action {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 2vh;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    margin-block-start: -5vh;
+  }
+  .section__action img {
+    position: static;
+  }
+  .section__action img:nth-of-type(1),
+  .section__action img:nth-of-type(2),
+  .section__action img:nth-of-type(3),
+  .section__action img:nth-of-type(4),
+  .section__action img:nth-of-type(5),
+  .section__action img:nth-of-type(6),
+  .section__action img:nth-of-type(7) {
+    width: 75%;
+  }
+  .section__action img:nth-of-type(7) {
+    grid-column: 1/3;
+    width: 50%;
+  }
+  .section__action article {
+    grid-column: 1/3;
+    text-align: center;
+  }
+  .section__action article h2 {
+    font-size: 12vmin;
+    padding-inline: 15%;
+  }
+  .section__action article p {
+    padding-inline: 15%;
+  }
+  .section__action article:nth-of-type(1) {
+    padding-block-end: 0;
+  }
+  .section__goldenbear .article__goldenbear__img {
+    margin-bottom: -30vh;
+  }
+  .section__goldenbear .anim__california__circle {
+    padding-block: 35vh;
+  }
+  .section__goldenbear .anim__california__circle img {
+    top: -100px;
+    right: -5%;
+    width: 350px;
+  }
+  footer {
+    padding-block: 10vh 5vh;
+  }
+  footer article {
+    width: clamp(350px, 50%, 500px);
+  }
+  footer article p:nth-of-type(2) {
+    font-size: 1rem;
+    padding-block-end: 10vh;
+  }
+  footer .infos .logos {
+    margin-inline-end: 0;
+  }
+  footer .anim {
+    top: 45px;
+    right: -170px;
+  }
+  footer .anim p {
+    font-size: 8vmin;
+  }
+  @keyframes banner {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(250px);
+    }
+    0% {
+      transform: translateX(0);
+    }
+  }
+}
+
+/*# sourceMappingURL=media.css.map */
