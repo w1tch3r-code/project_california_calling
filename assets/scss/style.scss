@@ -485,11 +485,11 @@ footer {
         width: max-content;
         padding-block: 10px;
         top: 0;
-        right: -435px;
+        right: -270px;
         background-color: vars.$bg-color-lightgrey;
 
         p {
-            @include mix.fontStyle('Inter', 7vmin, 700, 80%);
+            @include mix.fontStyle('Inter', 4rem, 700, 80%);
             padding-block: 12px;
             animation: banner 10s linear infinite alternate;
             color: vars.$txt-color-black;

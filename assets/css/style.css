@@ -439,12 +439,12 @@ footer .anim {
   width: max-content;
   padding-block: 10px;
   top: 0;
-  right: -435px;
+  right: -270px;
   background-color: #F5F5F5;
 }
 footer .anim p {
   font-family: "Inter";
-  font-size: 7vmin;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 80%;
   letter-spacing: 0;

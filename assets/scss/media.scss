@@ -5,7 +5,7 @@
 //                   Media Queries --> 480px
 // ==========================================================
 
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 30rem) {
 
     // ==========================================================
     //                    reusable CSS classes
@@ -185,7 +185,6 @@
 
     footer {
         article {
-            width: clamp(250px, 50%, 500px);
 
             p:nth-of-type(2) {
                 font-size: 1rem;
@@ -204,11 +203,11 @@
 
         .anim {
             padding-block: 0;
-            top: -15px;
-            right: -140px;
+            position: static;
+            transform: rotate(0) translate(-600px, -50px);
 
             p {
-                font-size: 6vmin;
+                font-size: 2.5rem;
             }
         }
     }
@@ -219,7 +218,7 @@
         }
 
         50% {
-            transform: translateX(250px);
+            transform: translateX(450px);
         }
 
         0% {
@@ -228,14 +227,56 @@
     }
 }
 
+
 // ==========================================================
-//              Media Queries --> 768px bis 1024px
+//              Media Queries --> 481px bis 768px
+// ==========================================================
+
+@media screen and (min-width: 30.0625em) and (max-width: 48rem) {
+
+    // ==========================================================
+    //                          Footer
+    // ==========================================================
+
+    footer {
+        article {
+
+            .anim {
+                padding-block: 0;
+                position: static;
+                transform: rotate(0) translate(-600px, -50px);
+
+                p {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        @keyframes banner {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(450px);
+            }
+
+            0% {
+                transform: translateX(0);
+            }
+        }
+
+    }
+}
+
+// ==========================================================
+//              Media Queries --> 481px bis 1024px
 // ==========================================================
 
 
 @media screen and (min-width: 30.0625em) and (max-width: 64em) {
 
-     // ==========================================================
+    // ==========================================================
     //                      Section Action
     // ==========================================================
 
@@ -291,7 +332,7 @@
         padding-block: 10vh 5vh;
 
         article {
-            width: clamp(350px, 50%, 500px);
+            width: clamp(400px, 50%, 500px);
 
             p:nth-of-type(2) {
                 font-size: 1rem;
@@ -307,7 +348,14 @@
         }
 
         .anim {
-            right: -50%;
+            padding-block: 0;
+            position: static;
+            transform: rotate(0) translate(-150px, -50px);
+
+            p {
+                font-size: 2.5rem;
+                animation: banner 4s linear infinite alternate;
+            }
         }
     }
 
@@ -317,7 +365,7 @@
         }
 
         50% {
-            transform: translateX(500px);
+            transform: translateX(50px);
         }
 
         0% {
@@ -327,11 +375,11 @@
 }
 
 // ==========================================================
-//       Media Queries --> 768px bis 1024px (landscape)
+//       Media Queries --> 481px bis 1024px (landscape)
 // ==========================================================
 
 
-@media screen and (min-width: 30.0625em) and (max-width: 64em) and (orientation: landscape) {
+@media screen and (min-width: 30.0625rem) and (max-width: 64em) and (max-height: 31.25rem) and (orientation: landscape) {
 
 
     // ==========================================================
@@ -438,11 +486,13 @@
         }
 
         .anim {
-            top: 45px;
-            right: -170px;
+            padding-block: 0;
+            position: static;
+            transform: rotate(0) translate(-150px, -25px);
 
             p {
-                font-size: 8vmin;
+                font-size: 2.5rem;
+                animation: banner 4s linear infinite alternate;
             }
         }
     }
@@ -453,7 +503,7 @@
         }
 
         50% {
-            transform: translateX(250px);
+            transform: translateX(50px);
         }
 
         0% {
