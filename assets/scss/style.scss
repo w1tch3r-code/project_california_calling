@@ -136,7 +136,7 @@ header {
 
 .section__story__wrap {
     background-color: vars.$bg-color;
-    padding-inline: 8% 0;
+    padding-inline: 8%;
     padding-block: 12vh 8vh;
     color: vars.$txt-color-white;
 
@@ -440,7 +440,7 @@ footer {
 
         p:nth-of-type(2) {
             @include mix.fontStyle('Inter', 1.5rem, 700, 192%);
-            padding-block: 3vh;
+            padding-block: 3vh 4vh;
         }
     }
 

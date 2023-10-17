@@ -95,7 +95,7 @@ header nav {
 
 .section__story__wrap {
   background-color: black;
-  padding-inline: 8% 0;
+  padding-inline: 8%;
   padding-block: 12vh 8vh;
   color: white;
 }
@@ -403,7 +403,7 @@ footer article p:nth-of-type(2) {
   line-height: 192%;
   letter-spacing: 0;
   font-style: normal;
-  padding-block: 3vh;
+  padding-block: 3vh 4vh;
 }
 footer .infos {
   display: flex;
