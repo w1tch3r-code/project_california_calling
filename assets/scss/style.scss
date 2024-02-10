@@ -99,7 +99,7 @@ header {
     }
 
     .article__claim {
-        width: clamp(300px, 50%, 500px);
+        width: clamp(300px, 100%, 500px);
         margin: 0 auto;
         text-align: center;
         padding-block: 4vh 20vh;
@@ -110,7 +110,7 @@ header {
         }
 
         h1 {
-            @include mix.fontStyle('Inter', 7vmin, 700, 80%);
+            @include mix.fontStyle('Inter', 4rem, 700, 80%);
             padding-block: 12px;
 
             span {
@@ -144,7 +144,7 @@ header {
 
         div {
             .p__big {
-                @include mix.fontStyle('Inter', 9vmin, 700, 112%, -2.475px);
+                @include mix.fontStyle('Inter', 5.875rem, 700, 112%, -2.475px);
                 padding-block-end: 3vh;
             }
         }
@@ -231,7 +231,7 @@ header {
         
 
         h2 {
-            @include mix.fontStyle('Inter', 7vmin, 700, 98%, -1.2px);
+            @include mix.fontStyle('Inter', 5.25rem, 700, 98%, -1.2px);
             padding-block: 5% 0;
             padding-inline: 5%;
             background-color: vars.$bg-color-lightgrey;
@@ -278,7 +278,7 @@ header {
             }
 
             h2 {
-                @include mix.fontStyle('Inter', 7.5vmin, 700, 98%);
+                @include mix.fontStyle('Inter', 5.25rem, 700, 98%);
                 padding-block-end: 24px
             }
         }
@@ -375,7 +375,7 @@ header {
             }
 
             h2 {
-                @include mix.fontStyle('Inter', 7.5vmin, 700, 98%);
+                @include mix.fontStyle('Inter', 5.25rem, 700, 98%);
                 padding-block-end: 24px
             }
         }

@@ -60,7 +60,7 @@ header .deko__line {
   display: block;
 }
 header .article__claim {
-  width: clamp(300px, 50%, 500px);
+  width: clamp(300px, 100%, 500px);
   margin: 0 auto;
   text-align: center;
   padding-block: 4vh 20vh;
@@ -76,7 +76,7 @@ header .article__claim p {
 }
 header .article__claim h1 {
   font-family: "Inter";
-  font-size: 7vmin;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 80%;
   letter-spacing: 0;
@@ -101,7 +101,7 @@ header nav {
 }
 .section__story__wrap article div .p__big {
   font-family: "Inter";
-  font-size: 9vmin;
+  font-size: 5.875rem;
   font-weight: 700;
   line-height: 112%;
   letter-spacing: -2.475px;
@@ -178,7 +178,7 @@ header nav {
 }
 .section__action article h2 {
   font-family: "Inter";
-  font-size: 7vmin;
+  font-size: 5.25rem;
   font-weight: 700;
   line-height: 98%;
   letter-spacing: -1.2px;
@@ -231,7 +231,7 @@ header nav {
 }
 .section__goldenbear article .goldenbear__title h2 {
   font-family: "Inter";
-  font-size: 7.5vmin;
+  font-size: 5.25rem;
   font-weight: 700;
   line-height: 98%;
   letter-spacing: 0;
@@ -329,7 +329,7 @@ header nav {
 }
 .section__poppybear article .poppybear__title h2 {
   font-family: "Inter";
-  font-size: 7.5vmin;
+  font-size: 5.25rem;
   font-weight: 700;
   line-height: 98%;
   letter-spacing: 0;

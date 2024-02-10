@@ -14,16 +14,23 @@
     padding-block: 2vh 10vh;
   }
   header .article__claim h1 {
-    font-size: 10vmin;
+    font-size: 2.5rem;
   }
   .section__story__wrap {
     padding-block: 5vh 10vh;
   }
   .section__story__wrap article .hero__info {
+    padding-inline-end: 0;
     margin-block-end: -60px;
+  }
+  .section__story__wrap article .hero__info .p__big {
+    font-size: 3.5rem;
   }
   .section__story__wrap article .main__infos {
     background: url("./../images/map.svg") bottom right/28vh no-repeat;
+  }
+  .section__story__wrap article .main__infos .p__big {
+    font-size: 3.5rem;
   }
   .section__action {
     display: flex;
@@ -48,7 +55,7 @@
     width: 85%;
   }
   .section__action article h2 {
-    font-size: 12vmin;
+    font-size: 3.5rem;
     padding-inline: 8%;
   }
   .section__action article p {
@@ -61,10 +68,7 @@
     padding-block: 5vh 0;
   }
   .section__goldenbear article .goldenbear__title h2 {
-    font-size: 12vmin;
-  }
-  .section__goldenbear article .goldenbear__text p {
-    font-size: 7vmin;
+    font-size: 3.5rem;
   }
   .section__goldenbear .article__goldenbear__img {
     padding-block-start: 4vh;
@@ -94,10 +98,7 @@
     padding-block: 5vh 0;
   }
   .section__poppybear article .poppybear__title h2 {
-    font-size: 12vmin;
-  }
-  .section__poppybear article .poppybear__text p {
-    font-size: 7vmin;
+    font-size: 3.5rem;
   }
   .section__poppybear .article__poppybear__img {
     padding-block-start: 4vh;
@@ -176,11 +177,23 @@
   header .article__claim {
     padding-block: 2vh 10vh;
   }
+  header .article__claim h1 {
+    font-size: 3rem;
+  }
   .section__story__wrap {
     padding-block: 8vh;
   }
+  .section__story__wrap article .hero__info {
+    padding-inline-end: 0;
+  }
+  .section__story__wrap article .hero__info .p__big {
+    font-size: 4.5rem;
+  }
   .section__story__wrap article .main__infos {
     background: url("./../images/map.svg") center right/35vh no-repeat;
+  }
+  .section__story__wrap article .main__infos .p__big {
+    font-size: 4.5rem;
   }
   .section__action {
     grid-template-columns: repeat(2, 1fr);
@@ -211,6 +224,7 @@
     text-align: center;
   }
   .section__action article h2 {
+    font-size: 4rem;
     padding-inline: 25%;
   }
   .section__action article p {
@@ -220,10 +234,22 @@
     padding-block-end: 0;
   }
   .section__goldenbear {
-    padding-block: 10vh 0;
+    padding-block: 5vh 0;
+  }
+  .section__goldenbear article .goldenbear__title h2 {
+    font-size: 4rem;
   }
   .section__goldenbear .article__goldenbear__img {
-    padding-block-start: 10vh;
+    padding-block-start: 5vh;
+  }
+  .section__poppybear {
+    padding-block: 5vh 0;
+  }
+  .section__poppybear article .poppybear__title h2 {
+    font-size: 4rem;
+  }
+  .section__poppybear .article__poppybear__img {
+    padding-block-start: 5vh;
   }
   footer {
     padding-block: 10vh 5vh;
